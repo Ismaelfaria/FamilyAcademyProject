@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
@@ -12,8 +11,10 @@ body{
     width: 70px;
      height: 70px;
 }
+.img-section2{
+    display: none;
+}
 
-@media only screen and (min-width: 992px) {
     .container{
         background-color: rgb(255, 255, 255);
         max-width: 100%;
@@ -37,7 +38,7 @@ body{
         justify-content: right;
     }
     .menu a{
-        color: rgb(150, 138, 138);
+        color: rgb(58, 52, 52);
         text-decoration: none;
         font-size: 17px;
         padding: 5px 11px;
@@ -48,15 +49,20 @@ body{
         border-top: 2px solid rgb(0, 0, 0);
     }
     #fale-conosco-btn{
-        background-color: black;
+        background-color: rgb(58, 52, 52);
         border-style: none;
         border-radius: 4px;
+        color: white;
+    }
+    #fale-conosco-btn:hover{
+        background-color: #e42148;
+        color: white;
     }
     
     .content{
        display: flex;
        background-color: rgb(255, 255, 255);
-       margin-bottom: 300px;
+       margin-bottom: 350px;
     }
     .content-r{
         flex-shrink: 1;
@@ -66,6 +72,7 @@ body{
         max-width: 50%;
         margin-left: 10%;
     }
+
     
     #p1{
         font-size: 17px;
@@ -84,27 +91,30 @@ body{
     }
     
     .content-r a{
-        background-color: #e42148;
-        
+        background-color: rgb(58, 52, 52);
         padding: 14px 12px;
         text-decoration: none;
         color: white;
         font-size: 14px;
         width: 145px;
         border-radius: 4px;
-        
+    }
+
+    .content-r a:hover{
+        background-color: #e42148;
     }
     
     .img-section{
-      padding-top: 0px;
+      padding-top: 90px;
       max-width: 50%;
     }
     .img-section img{
+        width: 40%;
         position: absolute;
         right: 0px;
         flex-shrink: 3;
         padding-left: 100px;
-        height: 800px;
+        height: auto;
     }
     
     .explanation{
@@ -188,539 +198,3 @@ body{
        bottom: 60px;
        right: 32px;
     }
-    }
-
-    @media only screen and (min-width: 768px) {
-        .container{
-            background-color: rgb(255, 255, 255);
-            max-width: 100%;
-            height: 80px;
-            display: flex;
-            align-items: center;
-            flex-wrap:wrap;
-        }
-        
-        .logo{
-            flex:30%;
-            margin-left: 50px;
-        }
-        .logo h1{
-            font-family: 'Lobster', sans-serif;
-            font-size: 29px;
-        }
-        .menu{
-            display: flex;
-            flex:60%;
-            justify-content: right;
-        }
-        .menu a{
-            color: rgb(150, 138, 138);
-            text-decoration: none;
-            font-size: 17px;
-            padding: 5px 11px;
-            margin-right: 5%;
-        
-        }
-        .menu a:hover{
-            border-top: 2px solid rgb(0, 0, 0);
-        }
-        #fale-conosco-btn{
-            background-color: black;
-            border-style: none;
-            border-radius: 4px;
-        }
-        
-        .content{
-           display: flex;
-           background-color: rgb(255, 255, 255);
-           margin-bottom: 120px;
-        }
-        .content-r{
-            flex-shrink: 1;
-            display: flex;
-            flex-direction: column;
-            margin-top: 200px;
-            max-width: 50%;
-            margin-left: 10%;
-        }
-        
-        #p1{
-            font-size: 17px;
-        }
-        
-        #p2{
-         font-size: 55px;
-         margin: 0px 0px 10px 0px;
-         
-         padding: 0;
-        }
-        
-        #p3{
-            margin-top: 0;
-            color:  rgb(59, 53, 53);
-        }
-        
-        .content-r a{
-            background-color: #e42148;
-            
-            padding: 14px 12px;
-            text-decoration: none;
-            color: white;
-            font-size: 14px;
-            width: 145px;
-            border-radius: 4px;
-            
-        }
-        
-        .img-section{
-          padding-top: 0px;
-          max-width: 50%;
-        }
-        .img-section img{
-            position: absolute;
-            right: 0px;
-            padding-left: 100px;
-            width: 50%;
-            height: 700px;
-        }
-        
-        .explanation{
-            margin: 0% 4% 0% 4%;
-            max-width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .explanation h2{
-            font-family: 'Lobster', sans-serif;
-            text-align: center;
-            font-size: 30px;
-            padding-top: 2%;
-            
-        }
-        .cards{
-            display: flex;
-            padding: 2% 5% 5% 5%;
-        }
-        .cards div{  
-            text-align: center;
-            font-size: 14px;
-        }
-        
-        .cards div:hover{
-            background-color: #e42148;
-            margin-top: 10px;
-            color: white;
-        }
-        .container-card{
-            border: 1px solid #e42148;
-            border-radius: 8px;
-            padding: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .container-card .alt{
-         display: none;
-        }
-        .container-card:hover .alt{
-            display: flex;
-            flex-direction: column;
-        }
-        .container-card:hover .card{
-            display: none;
-        }
-        
-        #card1{
-            margin-right: 10px;
-        }
-        #card3{
-            margin-left: 10px;
-        }
-        
-        .rodape{
-            max-width: 100%;
-            height: 200px;
-            background-image: linear-gradient(rgb(29, 21, 71), black);
-            border-top: 3px solid #e42148;
-            display: flex;
-            flex-direction: column;  
-            justify-content: center; 
-        }
-        .rodape h3{
-            color: white;
-            text-align: center;
-            font-family: 'Lobster', sans-serif;
-            font-size: 23px;
-        }
-        .rodape p{
-            color: white;
-            text-align: center;
-            font-size: 13px;
-            margin: 0px;
-        }
-        .whatsapp img{
-           width: 60px;
-           height: 60px;
-           position: fixed;
-           bottom: 60px;
-           right: 32px;
-        }
-        }
-
-        @media only screen and (min-width: 600px) {
-            .container{
-                background-color: rgb(255, 255, 255);
-                max-width: 100%;
-                height: 80px;
-                display: flex;
-                align-items: center;
-                flex-wrap:wrap;
-            }
-            
-            .logo{
-                flex:20%;
-                margin-left: 50px;
-            }
-            .logo h1{
-                font-family: 'Lobster', sans-serif;
-                font-size: 29px;
-            }
-            .menu{
-                display: flex;
-                flex:70%;
-                justify-content: right;
-                margin-right: 1%;
-            }
-            .menu a{
-                color: rgb(150, 138, 138);
-                text-decoration: none;
-                font-size: 17px;
-                padding: 5px 11px;
-                margin-right: 2%;
-            }
-            .menu a:hover{
-                border-top: 2px solid rgb(0, 0, 0);
-            }
-            #fale-conosco-btn{
-                background-color: black;
-                border-style: none;
-                border-radius: 4px;
-            }
-            
-            .content{
-               display: flex;
-               background-color: rgb(255, 255, 255);
-            }
-            .content-r{
-                display: flex;
-                flex-direction: column;
-                margin-top: 100px;
-                max-width: 50%;
-                margin-left: 10%;
-                margin-bottom: 12%;
-            }
-            
-            #p1{
-                font-size: 17px;
-            }
-            
-            #p2{
-             font-size: 55px;
-             margin: 0px 0px 10px 0px;
-             
-             padding: 0;
-            }
-            
-            #p3{
-                margin-top: 0;
-                color:  rgb(59, 53, 53);
-            }
-            
-            .content-r a{
-                background-color: #e42148;
-                
-                padding: 14px 12px;
-                text-decoration: none;
-                color: white;
-                font-size: 14px;
-                width: 145px;
-                border-radius: 4px;
-                
-            }
-            
-            .img-section{
-              padding-top: 100px;
-              max-width: 50%;
-            }
-            .img-section img{
-                position: absolute;
-                right: 0px;
-                padding-left: 100px;
-                width: 50%;
-                height: 500px;
-            }
-            
-            .explanation{
-                margin: 0% 4% 0% 4%;
-                max-width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-            .explanation h2{
-                font-family: 'Lobster', sans-serif;
-                text-align: center;
-                font-size: 30px;
-                padding-top: 2%;
-                
-            }
-            .cards{
-                display: flex;
-                padding: 2% 5% 5% 5%;
-            }
-            .cards div{  
-                text-align: center;
-                font-size: 14px;
-            }
-            
-            .cards div:hover{
-                background-color: #e42148;
-                margin-top: 10px;
-                color: white;
-            }
-            .container-card{
-                border: 1px solid #e42148;
-                border-radius: 8px;
-                padding: 20px;
-                flex-wrap: wrap;
-            }
-            
-            .container-card .alt{
-             display: none;
-            }
-            .container-card:hover .alt{
-                display: flex;
-                flex-direction: column;
-            }
-            .container-card:hover .card{
-                display: none;
-            }
-            
-            #card1{
-                margin-right: 10px;
-            }
-            #card3{
-                margin-left: 10px;
-            }
-            
-            .rodape{
-                max-width: 100%;
-                height: 200px;
-                background-image: linear-gradient(rgb(29, 21, 71), black);
-                border-top: 3px solid #e42148;
-                display: flex;
-                flex-direction: column;  
-                justify-content: center; 
-            }
-            .rodape h3{
-                color: white;
-                text-align: center;
-                font-family: 'Lobster', sans-serif;
-                font-size: 23px;
-            }
-            .rodape p{
-                color: white;
-                text-align: center;
-                font-size: 13px;
-                margin: 0px;
-            }
-            .whatsapp img{
-               width: 60px;
-               height: 60px;
-               position: fixed;
-               bottom: 60px;
-               right: 32px;
-            }
-            }
-
-            @media only screen and (max-width: 600px) {
-                .container{
-                    background-color: rgb(255, 255, 255);
-                    max-width: 100%;
-                    height: 80px;
-                    display: flex;
-                    align-items: center;
-                    flex-wrap:wrap;
-                    
-                }
-                
-                .logo{
-                    flex:100%;
-                    display: flex;
-                    justify-content: center;
-                    border-bottom: 1px solid black;
-                    height: 70px;
-                }
-                .logo h1{
-                    font-family: 'Lobster', sans-serif;
-                    font-size: 29px;
-                }
-                .menu{
-                    display: flex;
-                    flex:100%;
-                    justify-content: space-around;
-                    border-bottom: 1px solid black;
-                    height: 45px;
-                    align-items: center;
-                }
-                .menu a{
-                    color: rgb(150, 138, 138);
-                    text-decoration: none;
-                    font-size: 17px;
-                    padding: 5px 11px;
-                }
-                .menu a:hover{
-                    border-top: 2px solid rgb(0, 0, 0);
-                }
-                #fale-conosco-btn{
-                    background-color: black;
-                    border-style: none;
-                    border-radius: 4px;
-                }
-                
-                .content{
-                   display: flex;
-                   background-color: rgb(255, 255, 255);
-                }
-                .content-r{
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 100px;
-                    max-width: 50%;
-                    margin-left: 10%;
-                    margin-bottom: 12%;
-                }
-                
-                #p1{
-                    font-size: 17px;
-                }
-                
-                #p2{
-                 font-size: 55px;
-                 margin: 0px 0px 10px 0px;
-                 
-                 padding: 0;
-                }
-                
-                #p3{
-                    margin-top: 0;
-                    color:  rgb(59, 53, 53);
-                }
-                
-                .content-r a{
-                    background-color: #e42148;
-                    
-                    padding: 14px 12px;
-                    text-decoration: none;
-                    color: white;
-                    font-size: 14px;
-                    width: 145px;
-                    border-radius: 4px;
-                    
-                }
-                
-                .img-section{
-                  padding-top: 150px;
-                  max-width: 50%;
-                }
-                .img-section img{
-                    position: absolute;
-                    right: 0px;
-                    padding-left: 100px;
-                    width: 50%;
-                    height: 400px;
-                }
-                
-                .explanation{
-                    margin: 0% 4% 0% 4%;
-                    max-width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                }
-                .explanation h2{
-                    font-family: 'Lobster', sans-serif;
-                    text-align: center;
-                    font-size: 30px;
-                    padding-top: 2%;
-                    
-                }
-                .cards{
-                    display: flex;
-                    padding: 2% 5% 5% 5%;
-                }
-                .cards div{  
-                    text-align: center;
-                    font-size: 14px;
-                }
-                
-                .cards div:hover{
-                    background-color: #e42148;
-                    margin-top: 10px;
-                    color: white;
-                }
-                .container-card{
-                    border: 1px solid #e42148;
-                    border-radius: 8px;
-                    padding: 20px;
-                    flex-wrap: wrap;
-                }
-                
-                .container-card .alt{
-                 display: none;
-                }
-                .container-card:hover .alt{
-                    display: flex;
-                    flex-direction: column;
-                }
-                .container-card:hover .card{
-                    display: none;
-                }
-                
-                #card1{
-                    margin-right: 10px;
-                }
-                #card3{
-                    margin-left: 10px;
-                }
-                
-                .rodape{
-                    max-width: 100%;
-                    height: 200px;
-                    background-image: linear-gradient(rgb(29, 21, 71), black);
-                    border-top: 3px solid #e42148;
-                    display: flex;
-                    flex-direction: column;  
-                    justify-content: center; 
-                }
-                .rodape h3{
-                    color: white;
-                    text-align: center;
-                    font-family: 'Lobster', sans-serif;
-                    font-size: 23px;
-                }
-                .rodape p{
-                    color: white;
-                    text-align: center;
-                    font-size: 13px;
-                    margin: 0px;
-                }
-                .whatsapp img{
-                   width: 60px;
-                   height: 60px;
-                   position: fixed;
-                   bottom: 60px;
-                   right: 32px;
-                }
-                }
-        
